@@ -6,6 +6,7 @@ use tower_http::cors::CorsLayer;
 use midir::{MidiOutput, MidiOutputConnection};
 use std::fs;
 // --- Traktor Mod Source Constants ---
+const TSI_CONTENT: &[u8] = include_bytes!("../resources/s9-PAD-modes-modifier-template.tsi");
 const D2_QML: &str = r#"import CSI 1.0
 import QtQuick 2.0
 
@@ -436,6 +437,13 @@ fn export_traktor_mod(_app: tauri::AppHandle) -> Result<String, String> {
     })?;
     fs::write(target_dir.join("Api/ApiModule.qml"), API_MODULE_QML).map_err(|e| {
         let err_msg = format!("Error writing ApiModule.qml: {}", e);
+        println!("❌ [Rust] {}", err_msg);
+        err_msg
+    })?;
+
+    // Export the TSI file one level up (next to D2 folder)
+    fs::write(base_path.join("s9-PAD-modes-modifier-template.tsi"), TSI_CONTENT).map_err(|e| {
+        let err_msg = format!("Error writing s9-PAD-modes-modifier-template.tsi: {}", e);
         println!("❌ [Rust] {}", err_msg);
         err_msg
     })?;
