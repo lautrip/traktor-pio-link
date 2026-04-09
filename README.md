@@ -1,4 +1,4 @@
-# Traktor-Pio-Link 🏆🚀
+# Traktor-Pio-Link 
 
 **Traktor-Pio-Link** is a professional-grade BPM bridge designed to synchronize Traktor Pro 4 (and 3) with High-End Pioneer DJ mixers (DJM-S7, S9, S11) using high-precision MIDI SysEx messages.
 
