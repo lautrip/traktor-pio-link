@@ -4,6 +4,8 @@
 
 ![App Icon](src-tauri/icons/128x128.png)
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/traktorpiolink)
+
 ## 🌟 Key Features
 
 - **Dual SysEx Synchronization**: Sends BPM updates using both ID 17 and ID 18 simultaneously for maximum hardware compatibility.
@@ -56,8 +58,6 @@ When Traktor is playing, the **MASTER BPM** display will light up and your mixer
 ## ☕ Support & Donations
 
 If this project helps your DJ sets, consider buying me a coffee!
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/traktorpiolink)
-
 **[ko-fi.com/traktorpiolink](https://ko-fi.com/traktorpiolink)**
 
 > I'm also very good at making MIDI mappings, and I have killer mappings for the S9. DM if you want it!
