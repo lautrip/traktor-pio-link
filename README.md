@@ -4,7 +4,8 @@
 
 ![App Icon](src-tauri/icons/128x128.png)
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/traktorpiolink)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/traktorpiolink) 
+*Love this tool? Consider [supporting my work](https://ko-fi.com/traktorpiolink) to keep it updated!*
 
 ## 🌟 Key Features
 
