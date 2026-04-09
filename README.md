@@ -65,6 +65,6 @@ If this project helps your DJ sets, consider buying me a coffee!
 ---
 
 ## 🛡️ License & Privacy
-This repository is **Private**. The source code is compiled into native binary for maximum intellectual property protection.
+This repository is **Open Source** under the [MIT License](LICENSE). 
 
 *Crafted for DJs by DJs.* 🎧🕶️✨
