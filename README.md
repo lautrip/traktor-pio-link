@@ -20,7 +20,7 @@
 ## 🛠 Setup Guide
 
 ### 1. Download the App
-Go to the **[Releases](https://github.com/donmurdoc/traktor-pio-link/releases)** section and download the installer for your OS:
+Go to the **[Releases](https://github.com/lautrip/traktor-pio-link/releases)** section and download the installer for your OS:
 - **macOS**: `.dmg`
 - **Windows**: `.exe` or `.msi`
 
