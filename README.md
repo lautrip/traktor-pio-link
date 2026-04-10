@@ -7,14 +7,6 @@
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/traktorpiolink) 
 *I could really use a tip, I'm so hungry 🍕😿*
 
-## 🌟 Key Features
-
-- **Dual SysEx Synchronization**: Sends BPM updates using both ID 17 and ID 18 simultaneously for maximum hardware compatibility.
-- **Auto-Scan & Fast Connect**: Automatically detects Pioneer MIDI ports and establishes a low-latency connection.
-- **Integrated Mod Exporter**: A "one-click" solution to generate and export Traktor QML mods and MIDI mappings (.tsi).
-- **Pro Interface**: Compact and aesthetic UI inspired by the CDJ-2000NXS2 layout.
-- **Cross-Platform**: Native builds for both macOS (Silicon/Intel) and Windows.
-
 ---
 
 ## 🛠 Setup Guide
