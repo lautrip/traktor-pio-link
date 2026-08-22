@@ -5,22 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traktor Pio Link</title>
     <link rel="stylesheet" href="website-styles.css">
+    <style>
+        body[lang="es"] .lang-en { display: none !important; }
+        body[lang="en"] .lang-es { display: none !important; }
+        
+        .lang-switch span {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .lang-switch span:hover {
+            color: var(--accent);
+        }
+        .lang-switch .active {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        /* Step styles adjustment */
+        .step-content ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+        .step-content li {
+            margin-bottom: 5px;
+        }
+        .step-content code {
+            font-family: var(--font-mono);
+            background: #111;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            color: #eee;
+        }
+    </style>
 </head>
-<body>
+<body lang="en">
 
     <div class="container">
         <header>
             <div class="logo">TRAKTOR<span>PIO</span>LINK</div>
-            <nav>
+            <nav style="display: flex; align-items: center; gap: 20px;">
                 <a href="https://github.com/lautrip/traktor-pio-link">Source</a>
+                <div class="lang-switch" style="font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); user-select: none;">
+                    <span id="btn-en" class="active">EN</span> / <span id="btn-es">ES</span>
+                </div>
             </nav>
         </header>
 
         <section class="hero">
-            <h1>Precision Sync.</h1>
-            <p>The professional BPM bridge between Traktor Pro and Pioneer DJM hardware. Ultra-low latency MIDI SysEx.</p>
+            <h1 class="lang-en">Precision Sync.</h1>
+            <h1 class="lang-es">Sincronización Exacta.</h1>
+            
+            <p class="lang-en">The professional BPM bridge between Traktor Pro and Pioneer DJM hardware. Ultra-low latency MIDI SysEx.</p>
+            <p class="lang-es">El puente de BPM profesional entre Traktor Pro y mixers Pioneer DJM. MIDI SysEx de ultra baja latencia.</p>
+            
             <div class="cta-group">
-                <a href="https://github.com/lautrip/traktor-pio-link/releases" class="btn btn-primary">Download v1.0</a>
+                <a href="https://github.com/lautrip/traktor-pio-link/releases" class="btn btn-primary">
+                    <span class="lang-en">Download Releases</span>
+                    <span class="lang-es">Descargar Versiones</span>
+                </a>
                 <a href="https://ko-fi.com/traktorpiolink" class="btn btn-secondary">I could really use a tip, I'm so hungry 🍕😿</a>
             </div>
         </section>
@@ -28,20 +73,105 @@
         <section class="features">
             <div class="feature-card">
                 <h3>Hardware</h3>
-                <p>Support for DJM-S7, S9, S11.</p>
+                <p class="lang-en">Support for DJM-S7, S9, S11 mixers.</p>
+                <p class="lang-es">Soporte para mixers DJM-S7, S9 y S11.</p>
             </div>
             <div class="feature-card">
                 <h3>Connect</h3>
-                <p>Automatic MIDI port detection.</p>
+                <p class="lang-en">Automatic MIDI port detection and routing.</p>
+                <p class="lang-es">Detección y ruteo automático de puertos MIDI.</p>
             </div>
             <div class="feature-card">
                 <h3>Mods</h3>
-                <p>Built-in Traktor QML exporter.</p>
+                <p class="lang-en">Built-in Traktor QML exporter configuration.</p>
+                <p class="lang-es">Configuración integrada de exportador QML de Traktor.</p>
             </div>
         </section>
 
-        <section class="setup" style="text-align: center;">
-            <p style="font-family: var(--font-mono); color: var(--accent); letter-spacing: 2px;">DOWNLOAD &bull; CONNECT &bull; PLAY</p>
+        <section class="setup">
+            <h2 class="lang-en" style="text-align: center;">Setup Guide</h2>
+            <h2 class="lang-es" style="text-align: center;">Guía de Instalación</h2>
+            
+            <div class="step-list">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Download the App</h4>
+                        <h4 class="lang-es">Descargar la Aplicación</h4>
+                        
+                        <p class="lang-en">Go to the <a href="https://github.com/lautrip/traktor-pio-link/releases" style="color: var(--accent);">Releases</a> section and download the installer for your OS:</p>
+                        <p class="lang-es">Ve a la sección de <a href="https://github.com/lautrip/traktor-pio-link/releases" style="color: var(--accent);">Lanzamientos (Releases)</a> y descarga el instalador correspondiente:</p>
+                        
+                        <ul>
+                            <li><strong>macOS</strong>: <code>.dmg</code> (Apple Silicon / Intel)</li>
+                            <li><strong>Windows</strong>: <code>.exe</code> / <code>.msi</code></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Export Mapping Files</h4>
+                        <h4 class="lang-es">Exportar Archivos de Mapeo</h4>
+                        
+                        <p class="lang-en">Open <strong>Traktor-Pio-Link</strong> and click the <strong>"MAPPING FILES"</strong> button. Select a destination (e.g. Desktop) to export:</p>
+                        <p class="lang-es">Abre <strong>Traktor-Pio-Link</strong> y haz clic en el botón <strong>"MAPPING FILES"</strong>. Selecciona un destino para exportar:</p>
+                        
+                        <ul>
+                            <li><code>D2</code> folder (QML Mod)</li>
+                            <li><code>s9-PAD-modes-modifier-template.tsi</code></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Configure Traktor</h4>
+                        <h4 class="lang-es">Configurar Traktor</h4>
+                        
+                        <div class="lang-en">
+                            <p>Follow these steps inside Traktor:</p>
+                            <ul>
+                                <li><strong>MIDI Mapping:</strong> Go to <code>Settings > Controller Manager > Add... > Import TSI</code> and select the exported <code>.tsi</code>. Set MIDI In and Out to your mixer.</li>
+                                <li><strong>QML Mod:</strong> Copy the exported <code>D2</code> folder to your Traktor directory (overwrite the original, but backup first!):
+                                    <br>• <strong>macOS</strong>: <code>/Applications/Native Instruments/Traktor Pro 4/Traktor Pro 4.app/Contents/Resources/qml/CSI/D2</code>
+                                    <br>• <strong>Windows</strong>: <code>C:\Program Files\Native Instruments\Traktor Pro 4\Resources\qml\CSI\D2</code>
+                                </li>
+                                <li><strong>Add Pre Mapped Device:</strong> <code>Settings > Controller Manager > Add... > Pre Mapped > Traktor Kontrol > D2</code>.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lang-es">
+                            <p>Sigue estos pasos dentro de Traktor:</p>
+                            <ul>
+                                <li><strong>Mapeo MIDI:</strong> Ve a <code>Settings > Controller Manager > Add... > Import TSI</code> y selecciona el archivo <code>.tsi</code>. Configura MIDI In y Out para tu mixer.</li>
+                                <li><strong>Modificación QML:</strong> Copia la carpeta <code>D2</code> al directorio de Traktor Pro (haz una copia de seguridad antes):
+                                    <br>• <strong>macOS</strong>: <code>/Applications/Native Instruments/Traktor Pro 4/Traktor Pro 4.app/Contents/Resources/qml/CSI/D2</code>
+                                    <br>• <strong>Windows</strong>: <code>C:\Program Files\Native Instruments\Traktor Pro 4\Resources\qml\CSI\D2</code>
+                                </li>
+                                <li><strong>Añadir dispositivo mapeado:</strong> <code>Settings > Controller Manager > Add... > Pre Mapped > Traktor Kontrol > D2</code>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Connect & Sync</h4>
+                        <h4 class="lang-es">Conectar y Sincronizar</h4>
+                        
+                        <p class="lang-en">Connect your Pioneer mixer via USB. In the app, select your mixer from the <strong>MIXER</strong> dropdown. As soon as Traktor plays, the BPM display will sync automatically!</p>
+                        <p class="lang-es">Conecta tu mixer Pioneer por USB. En la aplicación, selecciónala del menú desplegable <strong>MIXER</strong>. En cuanto Traktor empiece a reproducir, el BPM se sincronizará automáticamente.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -51,5 +181,37 @@
         </footer>
     </div>
 
+    <script>
+        const btnEn = document.getElementById('btn-en');
+        const btnEs = document.getElementById('btn-es');
+        
+        function setLanguage(lang) {
+            document.body.setAttribute('lang', lang);
+            if (lang === 'es') {
+                btnEs.classList.add('active');
+                btnEn.classList.remove('active');
+            } else {
+                btnEn.classList.add('active');
+                btnEs.classList.remove('active');
+            }
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        btnEn.addEventListener('click', () => setLanguage('en'));
+        btnEs.addEventListener('click', () => setLanguage('es'));
+        
+        // Detect initial language preference
+        const savedLang = localStorage.getItem('preferred-lang');
+        if (savedLang) {
+            setLanguage(savedLang);
+        } else {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('es')) {
+                setLanguage('es');
+            } else {
+                setLanguage('en');
+            }
+        }
+    </script>
 </body>
 </html>
